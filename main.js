@@ -1,6 +1,6 @@
 let user = {};
 
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i <= 10; i++) {
   let name = prompt("Введите имя");
   let age = prompt("Введите возраст");
 
@@ -12,9 +12,10 @@ for (let i = 1; i <= 3; i++) {
 
 for (let key in user) {
   console.log(`Пользователь ${key}`);
-  for (newkey in user[key]) {
-    console.log(user[key][newkey]);
-  }
+  for (let newkey in user[key]) {}
+    console.log(`Ваше имя - ${user[key].names}`);
+    console.log(`Ваш возраст - ${user[key].ages}`);
+ 
 }
 
 let rec = receipt();
